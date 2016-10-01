@@ -19,3 +19,6 @@
 [submodule "plugins/vim-colors-solarized"]
 	path = plugins/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "plugins/indentLine.git"]
+	path = plugins/indentLine.git
+	url = https://github.com/Yggdroot/indentLine.git
