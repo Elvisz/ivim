@@ -43,3 +43,6 @@
 [submodule "plugins/tern-for-vim"]
 	path = plugins/tern-for-vim
 	url = https://github.com/ternjs/tern_for_vim.git
+[submodule "plugins/neocomplete"]
+	path = plugins/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
