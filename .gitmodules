@@ -46,3 +46,6 @@
 [submodule "plugins/neocomplete"]
 	path = plugins/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "plugins/vim-mustache-handlebars"]
+	path = plugins/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
