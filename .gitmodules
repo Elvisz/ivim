@@ -37,3 +37,6 @@
 [submodule "plugins/syntastic"]
 	path = plugins/syntastic
 	url = https://github.com/scrooloose/syntastic
+[submodule "plugins/auto-pairs"]
+	path = plugins/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
