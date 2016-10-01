@@ -1,7 +1,4 @@
-# myvim
 vim config and plugins for web development. 
-Language support: 
-* JavaScript
 
 ## Requirements
   * python 2.7+
@@ -28,25 +25,3 @@ Add this line anywhere in your personal `.Xdefaults` file (~/.Xdefaults):
 `xterm*metaSendsEscape: true`
 Then reload the config with xrdb. Without this step the changes in .Xdefaults won't take effect until the next X restart:
 `xrdb -l ~/.Xdefaults`
-
-## Keymaps
-`<leader>`: `,`
-
-### Files
-* Open explorer: `<leader>e`
-* Open a file: `<leader>o`
-* Close a file `<leader>w`
-* Close vim: `<leader>q`
-* Close vim with save all: `<leader>Q`
-
-### Buffer Tabs
-* Switch to previous tab: `<tab>j`
-* Switch to next tab: `<tab>k`
-* Switch to first tab: `<tab>h`
-* Switch to last tab: `<tab>l`
-
-### Editor
-* Fast selection: `ww`/`WW`
-* Search text: `<leader>f`
-* Foldering: `<F4>`
-* Format current file: `<leader>l`
