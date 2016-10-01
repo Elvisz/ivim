@@ -16,3 +16,6 @@
 [submodule "plugins/vim-airline-themes"]
 	path = plugins/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "plugins/vim-colors-solarized"]
+	path = plugins/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
