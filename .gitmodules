@@ -49,3 +49,6 @@
 [submodule "plugins/vim-mustache-handlebars"]
 	path = plugins/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule "plugins/vim-rails"]
+	path = plugins/vim-rails
+	url = https://github.com/tpope/vim-rails
