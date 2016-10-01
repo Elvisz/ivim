@@ -1,0 +1,1 @@
+let g:tern#command = ["node", split(system("which tern"), '\n')[0], '--no-port-file']

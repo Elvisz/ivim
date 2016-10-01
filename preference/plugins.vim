@@ -1,0 +1,12 @@
+source $IVIM_DIR/preference/plugins/auto-pairs.vim
+source $IVIM_DIR/preference/plugins/ctrl-p.vim
+source $IVIM_DIR/preference/plugins/igit.vim
+source $IVIM_DIR/preference/plugins/git-branch.vim
+source $IVIM_DIR/preference/plugins/indent-line.vim
+source $IVIM_DIR/preference/plugins/nerdtree.vim
+source $IVIM_DIR/preference/plugins/vim-airline.vim
+source $IVIM_DIR/preference/plugins/syntasitic.vim
+source $IVIM_DIR/preference/plugins/vim-colors-solarized.vim
+source $IVIM_DIR/preference/plugins/vim-mustache-handlebars.vim
+source $IVIM_DIR/preference/plugins/tern-for-vim.vim
+source $IVIM_DIR/preference/plugins/neocomplete.vim

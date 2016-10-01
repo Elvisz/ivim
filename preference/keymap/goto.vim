@@ -1,0 +1,1 @@
+autocmd FileType javascript nnoremap <buffer> <silent> <M-d> :<C-u>TernDef<cr>
