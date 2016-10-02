@@ -280,14 +280,15 @@ function! s:igit.current_buf_git_blame_lines()
     let l:to_index = diff.to.line ? diff.to.line - 1 : diff.to.line
     let l:from_count = diff.from.count
     let l:to_count = diff.to.count
+    let l:is_modify = l:from_index == l:to_index && l:from_count == l:to_count
 
-    if(l:from_count > l:to_count)
+    if(l:from_count > l:to_count || l:is_modify)
       " remove removed lines from blame lines
       call remove(l:origin_blames, l:from_index, l:from_index + l:from_count - 1)     
     endif
 
     " add modified or added lines to blame lines
-    if(l:to_count)
+    if(l:to_count || l:is_modify)
       call extend(l:origin_blames, repeat([''], l:to_count), l:to_index)
     endif
   endfor

@@ -35,3 +35,6 @@ nnoremap <silent> <M-h> :setlocal cursorline! cursorcolumn!<CR>
 
 " Select all
 noremap <silent> <M-a> <esc>ggVG<CR>
+
+" Refresh current buffer
+noremap <silent> <M-r> <Esc>:<C-u>bufdo edit!<CR>

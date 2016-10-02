@@ -18,7 +18,7 @@ nnoremap <silent><M-o> <Esc>:<C-u>CtrlPMRU<cr>
 nnoremap <silent><M-w> :<C-u>call <SID>close_buf()<CR>
 
 " Open/Close file explore
-nnoremap <silent><M-e> :<C-u>NERDTreeToggle<CR> " require NERDTree
+nnoremap <silent><M-e> <Esc>:<C-u>NERDTreeToggle<CR> " require NERDTree
 
 " Close current split window
 nnoremap <silent>\\ :<C-u>close<CR>
