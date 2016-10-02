@@ -1,0 +1,21 @@
+{
+    "preset": "airbnb",
+
+    "requireSemicolons": true,
+    "requireTrailingComma": false,
+    "validateLineBreaks": "LF",
+    "validateIndentation": 2,
+    "maximumLineLength": 999,
+    "disallowSpaceAfterLineComment": false,
+    "disallowSpacesInFunction": {
+      "beforeOpeningRoundBrace": true
+    },
+    "requireSpaceAfterKeywords": [
+      "else",
+      "case",
+      "catch",
+      "void",
+      "return",
+      "typeof"
+    ]
+}
