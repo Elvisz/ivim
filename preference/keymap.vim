@@ -2,8 +2,6 @@
 let mapleader = ","
 let g:mapleader = ","
 
-" Re-define commands
-
 " Switch vim windows
 nmap <silent><tab><tab> <Esc><C-w>w
 

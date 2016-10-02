@@ -30,20 +30,8 @@ nnoremap <silent> <M-l>l :let &l:foldlevel = (&l:foldlevel ==# 1 ? 999 : 1)<CR>
 vnoremap <silent> <tab> >
 vnoremap <silent> <S-tab> <
 
-" =========== Format ===========
-nnoremap <silent> <M-L> gg=G <CR> " Format cuurent file
-
 " =========== Highlight Current Line/Colume ===========
 nnoremap <silent> <M-h> :setlocal cursorline! cursorcolumn!<CR>
-
-" =========== Movement ===========
-" Move a line or range up/down by ALT+k\j
-nnoremap <silent> <S+Down> :m .+1<CR>==
-nnoremap <silent> <S+Up> :m .-2<CR>==
-inoremap <silent> <S+Down> <Esc>:m .+1<CR>==gi
-inoremap <silent> <S+Up> <Esc>:m .-2<CR>==gi
-vnoremap <silent> <S+Down> :m '>+1<CR>gv=gv
-vnoremap <silent> <S+Up> :m '<-2<CR>gv=gv
 
 " Select all
 noremap <silent> <M-a> <esc>ggVG<CR>

@@ -1,5 +1,5 @@
 " =========== View ===========
-set wildmenu " Turn on the WiLd menu
+set wildmenu " Turn on the wild menu
 set ruler "Always show current position
 set cmdheight=2 " Height of the command bar
 set number "Show line number"
@@ -8,7 +8,6 @@ set mat=2 " How many tenths of a second to blink when matching brackets
 set list listchars=trail:·,precedes:«,extends:»,eol:↲,tab:»» " Show tabs and trailing spaces
 
 " =========== File ===========
-set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
 set ffs=unix,dos,mac " Use Unix as the standard file type
 filetype plugin on " Enable filetype plugins
 filetype indent on " Enable filetype indent
@@ -51,7 +50,6 @@ source $IVIM_DIR/preference/plugins/vim-colors-solarized.vim " set solarized the
 " =========== Statusline ===========
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%{fugitive#statusline()}
 set statusline+=%*
 
 " =========== Others ===========

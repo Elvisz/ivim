@@ -10,3 +10,4 @@ source $IVIM_DIR/preference/plugins/vim-colors-solarized.vim
 source $IVIM_DIR/preference/plugins/vim-mustache-handlebars.vim
 source $IVIM_DIR/preference/plugins/tern-for-vim.vim
 source $IVIM_DIR/preference/plugins/neocomplete.vim
+source $IVIM_DIR/preference/plugins/vim-autoformat.vim
