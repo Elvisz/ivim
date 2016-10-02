@@ -3,7 +3,7 @@ vim config and plugins for web development.
 ## Requirements
   * python 2.7+
   * vim 7.4+ with lua or `brew install vim --with-lua`
-  * node & npm & tern `npm install -g tern`
+  * node & npm & tern & js-beautify & jscs `npm install -g tern`, `npm -g install js-beautify`, `npm install -g jscs`
   * Install [Powerline Fonts](https://github.com/powerline/fonts) and set your terminal font with `* powerline`
 
 Recomment nvm for nodejs `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash`
