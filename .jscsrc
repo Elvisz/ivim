@@ -10,6 +10,9 @@
     "disallowSpacesInFunction": {
       "beforeOpeningRoundBrace": true
     },
+    "disallowSpacesInAnonymousFunctionExpression": {
+      "beforeOpeningRoundBrace": true
+    },
     "requireSpaceAfterKeywords": [
       "else",
       "case",
