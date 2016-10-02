@@ -52,3 +52,6 @@
 [submodule "plugins/vim-rails"]
 	path = plugins/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "plugins/vim-autoformat"]
+	path = plugins/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat.git
