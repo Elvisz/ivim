@@ -13,6 +13,7 @@ execute pathogen#infect($IVIM_DIR . '/plugins/{}')
 execute pathogen#helptags()
 
 " Preference
+source $IVIM_DIR/Preference/lib.vim
 source $IVIM_DIR/preference/plugins.vim
 source $IVIM_DIR/preference/user.vim
 source $IVIM_DIR/preference/keymap.vim
