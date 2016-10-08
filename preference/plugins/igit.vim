@@ -1,8 +1,7 @@
 " auto cmds
 augroup igit
   autocmd!
-  autocmd BufWinEnter,WinEnter,BufDelete * call s:utils.win_close()
-  autocmd TextChanged,TextChangedI,BufEnter * :call s:igit.refresh()
+  autocmd BufEnter * :call s:igit.refresh()
   autocmd User BufferChanged :call s:igit.refresh()
   autocmd User WinClosePost :call s:igit.resize_git_blame_win()
 augroup END
@@ -27,18 +26,6 @@ let s:temp_buffer = tempname()
 " ---------- utils ---------- 
 let s:utils = {}
 
-function! s:utils.win_close()
-  if get(t:, '_win_count', 0) > winnr('$')
-    doautocmd User WinClosePost "after close any window
-  endif
-  let t:_win_count = winnr('$')
-endfun
-
-function! s:utils.debounce(delay, handler) abort
-  let l:timer 
-endfunction
-
-" 
 function! s:utils.scroll(line) abort
     let l:offset = a:line - line('w0')
     if l:offset < 0
@@ -111,7 +98,16 @@ endfunction
 
 " git blame lines
 function! s:utils.git.current_buf_blame_lines() abort
-  return map(split(system('git blame '.expand('%')), '\n'), 'v:val')
+  let l:blames = []
+
+  for blame in split(system('git blame '.expand('%')), '\n')
+    if(match(blame, "00000000 (Not Committed Yet") == -1)
+      let l:blames = add(l:blames, blame)
+    endif
+  endfor
+
+  return l:blames
+  " return map(split(system('git blame '.expand('%')), '\n'), 'v:val')
 endfunction
 
 " git diff lines, get the diff lines info but the detail changes
