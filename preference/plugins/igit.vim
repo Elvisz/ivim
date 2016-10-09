@@ -26,6 +26,14 @@ let s:temp_buffer = tempname()
 " ---------- utils ---------- 
 let s:utils = {}
 
+function! s:utils.git_cwd() abort
+    return expand(system("git rev-parse --show-toplevel | tr -d '\\n'"))
+endfunction
+
+function! s:utils.relative_git_cwd(path) abort
+    return substitute(a:path, s:utils.git_cwd() . "/" , "", "")
+endfunction
+
 function! s:utils.scroll(line) abort
     let l:offset = a:line - line('w0')
     if l:offset < 0
@@ -43,7 +51,7 @@ function! s:utils.snapshot_current_file_and_buf() abort
   execute 'silent noautocmd write!' .s:temp_buffer
 
   " copy current file to a temp file
-  call system('git show :'.expand('%').' > '.s:temp_file)
+  call system('git show :'.s:utils.relative_git_cwd(expand('%:p')).' > '.s:temp_file)
 endfunction
 
 " trim left and right

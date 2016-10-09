@@ -1,5 +1,9 @@
 autocmd FileType javascript nnoremap <buffer> <silent> <C-]> :<C-u>TernDef<cr>
 
+" ctags optimization
+set autochdir
+set tags=tags
+
 autocmd VimEnter call s:ripper_tags_start()
 autocmd VimLeave call s:ripper_tags_end()
 autocmd BufWrite *.rb :call s:ripper_tags_start()

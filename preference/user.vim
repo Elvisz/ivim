@@ -72,7 +72,3 @@ set lazyredraw
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
 set langmenu=en
-
-" ctags optimization
-set autochdir
-set tags=tags
