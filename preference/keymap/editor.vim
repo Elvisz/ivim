@@ -31,7 +31,7 @@ vnoremap <silent> <tab> >
 vnoremap <silent> <S-tab> <
 
 " =========== Highlight Current Line/Colume ===========
-nnoremap <silent> <M-h> :setlocal cursorline! cursorcolumn!<CR>
+nnoremap <silent> <c-h> :setlocal cursorline! cursorcolumn!<CR>
 
 " Select all
 noremap <silent> <M-a> <esc>ggVG<CR>
