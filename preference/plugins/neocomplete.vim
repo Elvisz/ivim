@@ -37,3 +37,6 @@ autocmd FileType java setlocal omnifunc=javacomplete#CompleteParamsInfo
 autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+
+" no preview for complete
+set completeopt-=preview
